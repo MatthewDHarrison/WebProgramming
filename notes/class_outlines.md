@@ -1,6 +1,5 @@
 # Thursday, January 18th: Course Introduction
 * The bad news: course is closed, wait-list
-* The good news: administrative changes
 * Why (still) the web?  Why are you here?
 * Motivation 1, the first web page (1992): http://info.cern.ch/hypertext/WWW/TheProject.html
 * Motivation 1A: http://line-mode.cern.ch/www/hypertext/WWW/TheProject.html
@@ -8,7 +7,7 @@
 * How two computers talk to each other: basic networking
 * The Internet vs the World Wide Web
 
-# Thursday, September 7th: HTTP
+# Tuesday, January 23rd: HTTP
 * PSA on sexual harassment
 * Last class: the big ideas?
 * Recall telephone conversation example
@@ -25,7 +24,7 @@
 * Demo: Web server
 * Q: How to browse web without web browser?
   
-# Tuesday, September 12th: HTML
+# Thursday, January 25th: HTML
 * Last class: recall how HTTP works
 * Recall question: if no port number is provided, the default port number to connect to on web server is...?
 * Recall question: what HTTP command is executed when entering URL address?

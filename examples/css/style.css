@@ -1,1 +1,30 @@
 /* This is a style sheet */
+
+body {
+	background-color: #1E90FF;
+	font-family: "Comic Sans MS";
+	font-size: 28px;
+	color: white;
+}
+
+/*
+
+body {...} from lines 3 - 8 => rule
+font-family: "Comic Sans MS"; line 5 => declaration
+`font-family` => attribute or key
+`"Comic Sans MS"` => value
+
+*/
+
+div {
+	text-align: center;
+	color: yellow;
+	background-color: magenta;
+}
+
+
+
+
+
+
+

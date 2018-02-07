@@ -90,6 +90,10 @@
 * `<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />` => your layout will be displayed properly at 1:1 scale.  No zooming will be applied.
 * So can I have a different stylesheets for different screen sizes and devices?
   - http://broadcast.oreilly.com/2010/04/using-css-media-queries-ipad.html
+  - `<link rel="stylesheet" media="all and (max-device-width: 480px)" href="iphone.css">`
+  - `<link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" href="ipad-portrait.css">`
+  - `<link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" href="ipad-landscape.css">`
+  - `<link rel="stylesheet" media="all and (min-device-width: 1025px)" href="ipad-landscape.css">`
 * Can I have different rules in a CSS for different screen sizes (e.g., widths)?
 * Gmail in the news recently: http://googleappsdeveloper.blogspot.com/2016/09/your-emails-optimized-for-every-screen-with-responsive-design.html
 * Your next lab

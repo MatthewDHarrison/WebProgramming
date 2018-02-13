@@ -109,35 +109,36 @@
 * Variables: dynamic typing but will be one of the following: number, string, array, object, boolean
   - Three states of a variable: (1) not set yet (undefined), (2)set to nothing (null), (3) set to a valid value
 * Operations: "+" is interesting
-* Function arguments: (1) too many: extras ignored, (2) too few: remainders get an undefined value
 * Lists (a.k.a., arrays)
 * _(Almost)_ everything in JavaScript is an object_ https://stackoverflow.com/questions/9108925/how-is-almost-everything-in-javascript-an-object
 * Okay, but how do I use JavaScript in an HTML page?  Or how do I dynamically modify a loaded HTML page using JavaScript?
 
 # Tuesday, February 13th: Document Object Model (DOM)
 * Last class: JavaScript data and data structures (lists and dictionaries)
-* Today: the "var" keyword, using JavaScript in an HTML page
 * The big idea: using JavaScript to dynamically modify HTML content _after it is loaded_.  Yes, you can mix HTML and JavaScript
+* Today: the "var" keyword, using JavaScript in an HTML page
 * Definition: event
 * The document object: a JavaScript object that contains the entire structure of an HTML page after it is loaded, in tree-like format (thus, known as the Document Object Model tree).  Example of a DOM tree: https://developer.mozilla.org/en-US/docs/Using_the_W3C_DOM_Level_1_Core
-* Example 1: Tufts FML
-* Example 2: Prepending
+* Example 1: Fiddle https://jsfiddle.net/mchow01/0wga8wLp/3/?utm_source=website&utm_medium=embed&utm_campaign=0wga8wLp
+* Example 2: Tufts FML
+* Example 3: Prepending
   `// The idea: create a new node and prepend to the first node in the "content" div
         newElem = document.createElement("p");
         newElem.innerHTML = '<p><span class="message">' +theMessage + " #FML</span></p>";
         toUpdate.insertBefore(newElem, toUpdate.childNodes[0]);`
 * A powerful idea: update the HTML based on events
-* Example 3: Highlighting paragraphs in an HTML document
-* Example 4: Double Rainbow
+* Example 4: Highlighting paragraphs in an HTML document
+* Example 5: Double Rainbow
 * Nex time: even more powerful idea: update the HTML with data from a web server
-* Your next lab
-* Your Assignment 2
 
 # Thursday, February 15th: Functions in JavaScript
+* Your next lab
+* Your Assignment 2
 * Recall: almost everything in JavaScript is a/an ______
 * Too many built-in JavaScript objects to name: string, Date, Math
 * Special object in JavaScript: the associative array a.k.a., dictionary a.k.a., hash a.k.a., finite map
 * So what about functions?
+* Function arguments: (1) too many: extras ignored, (2) too few: remainders get an undefined value
 * Who is in COMP 105 currently or have taken COMP 105?
 * What if I told you functions can be used as values to variables? Functions as arguments to functions? That's what it means by functions as first-class!
 * Consider example at http://www.joelonsoftware.com/items/2006/08/01.html

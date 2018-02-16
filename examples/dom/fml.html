@@ -9,14 +9,14 @@
 		<link rel="stylesheet" href="style.css" />
 		<script>
 			function update() {
-				// Step 1: Get the text inputted in textbox
-				theText = document.getElementById("msg").value;
+				// Step 1: get the text inside the textbox
+				theMessage = document.getElementById("msg").value;
 
-				// Step 2: Get the element that you want to modify
-				elem = document.getElementById("content");
+				// Step 2: get the div you want to put text into
+				theOutputDiv = document.getElementById("content");
 
-				// Step 3: Inject the text from textbox into element
-				elem.innerHTML += '<p class="message">' + theText + "</p>";
+				// Step 3: set the content of theOutputDiv to the inputted message
+				theOutputDiv.innerHTML += '<div class="message">' + theMessage + "</div>";
 
 				// Clear the textbox
 				document.getElementById("msg").value = "";

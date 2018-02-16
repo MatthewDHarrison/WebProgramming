@@ -117,22 +117,11 @@
 * Last class: JavaScript data and data structures (lists and dictionaries)
 * The big idea: using JavaScript to dynamically modify HTML content _after it is loaded_.  Yes, you can mix HTML and JavaScript
 * Today: the "var" keyword, using JavaScript in an HTML page
-* Definition: event
 * The document object: a JavaScript object that contains the entire structure of an HTML page after it is loaded, in tree-like format (thus, known as the Document Object Model tree).  Example of a DOM tree: https://developer.mozilla.org/en-US/docs/Using_the_W3C_DOM_Level_1_Core
 * Example 1: Fiddle https://jsfiddle.net/mchow01/0wga8wLp/3/?utm_source=website&utm_medium=embed&utm_campaign=0wga8wLp
-* Example 2: Tufts FML
-* Example 3: Prepending
-  `// The idea: create a new node and prepend to the first node in the "content" div
-        newElem = document.createElement("p");
-        newElem.innerHTML = '<p><span class="message">' +theMessage + " #FML</span></p>";
-        toUpdate.insertBefore(newElem, toUpdate.childNodes[0]);`
-* A powerful idea: update the HTML based on events
-* Example 4: Highlighting paragraphs in an HTML document
-* Example 5: Double Rainbow
-* Nex time: even more powerful idea: update the HTML with data from a web server
+* Example 2: Highlighting paragraphs in an HTML document
 
 # Thursday, February 15th: Functions in JavaScript
-* Your next lab
 * Your Assignment 2
 * Recall: almost everything in JavaScript is a/an ______
 * Too many built-in JavaScript objects to name: string, Date, Math
@@ -148,7 +137,12 @@
   - More reusable and scalable code
   - "Object Oriented Programming" in JavaScript
   - Example: `apply` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
+* Example: https://jsfiddle.net/mchow01/72j6knum/1/
 * Is this idea that important in JavaScript? Yes, not only in JavaScript but in many languages and frameworks as well
   - Events
   - Callbacks (e.g., working with the GPS)
   - Asynchronous communications (e.g., downloading data from the web within a running app)
+* A powerful idea: update the HTML based on events, combine DOM + first class functions
+* Example: Double Rainbow
+* Your next lab
+* Next time: even more powerful idea: update the HTML with data from a web server

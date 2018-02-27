@@ -167,7 +167,6 @@
 * XHR key methods and attributes: `open()`, `send()`, `onreadystatechange`, `status`, `readyState`, `responseText`
 * The data that now typically get back in the `responseText`: JSON
 * Client-side JS is heavily event-based
-* Examples of async APIs in JavaScript: `navigator.geolocation.getCurrentPosition()`, `XMLHttpRequest`
 * Finishing up on the XMLHttpRequest example:
   - Asynchronous
   - The event: onreadystatechange.  The readyState values:
@@ -178,3 +177,52 @@
     - 4 => The request is complete
 * Parsing the JSON data
 * Is checking for readyState 4 good enough?  NO!
+
+# Thursday, March 1st
+* Examples of async APIs in JavaScript: `navigator.geolocation.getCurrentPosition()`, `XMLHttpRequest`
+* Quiz 1
+* Midsemester course evaluation
+
+# Tuesday, March 6th: jQuery
+* Semester group project teams
+* Project proposal extended
+* Caveats with XMLHttpRequest and one of the limitations of client-side JavaScript
+* Limitations of Client-Side JavaScript:
+  - Client-side tasks (or what you can do with client-side JavaScript)
+    - Dynamically modify browser content, e.g., with animation
+    - Dynamically fetch new documents from servers
+    - Allow new methods of user interaction other than links and buttons
+    - Get information about a user's computer (navigator.userAgent)
+  - Limitations of client-side scripts
+    - Other people cannot access data or information that you have (i.e., you can't make responses)
+    - Can't to write to files on disk
+    - You are constrained by web browser (i.e., browser incompatibility issues)
+    - Storage constraints (e.g., cookies, local storage)
+    - Security issues (e.g., same origin policy)
+    - View source
+* How I designed Assignment 2
+  - Your responsibility to deal with errors
+  - Some flexibility
+  - Some open-endedness, force you to ask questions
+  - More than one acceptable way to solve the problem, deal with engineering tradeoffs
+  - Opportunities for the future
+* jQuery examples
+* What's the point of jQuery?
+  - Write shorter code
+  - Don't need to deal with brower incompatibility issues
+* But why did we learn JS first?!?!?
+  - Need basic vocabulary
+  - How $() works => DOM
+  - How $.ajax, $.get, $.post all work => XHR
+
+# Thursday, March 8th: Persistence with Cookies and Local Storage
+* Last class: S.O.P. in client-side JavaScript
+* Motivation: a certain project at PolyHack caught my attention...
+* Today: storing data over time
+* What can't we do, knowing the limitations of client-side JavaScript.
+* What we have learned so far in this course: key-value pairs
+* Two basic storage mechanisms on the client-side: cookies, local storage
+* Cookies: 4 KB max, there is a max number of cookies per domain
+* Local storage: ~5 MB per domain
+* The finer point: both cookies are local storage are still bound by Same Origin Policy
+* Examples

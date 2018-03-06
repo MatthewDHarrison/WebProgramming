@@ -184,8 +184,6 @@
 * Midsemester course evaluation
 
 # Tuesday, March 6th: jQuery
-* Semester group project teams
-* Project proposal extended
 * Caveats with XMLHttpRequest and one of the limitations of client-side JavaScript
 * Limitations of Client-Side JavaScript:
   - Client-side tasks (or what you can do with client-side JavaScript)
@@ -200,12 +198,6 @@
     - Storage constraints (e.g., cookies, local storage)
     - Security issues (e.g., same origin policy)
     - View source
-* How I designed Assignment 2
-  - Your responsibility to deal with errors
-  - Some flexibility
-  - Some open-endedness, force you to ask questions
-  - More than one acceptable way to solve the problem, deal with engineering tradeoffs
-  - Opportunities for the future
 * jQuery examples
 * What's the point of jQuery?
   - Write shorter code
@@ -216,8 +208,13 @@
   - How $.ajax, $.get, $.post all work => XHR
 
 # Thursday, March 8th: Persistence with Cookies and Local Storage
-* Last class: S.O.P. in client-side JavaScript
-* Motivation: a certain project at PolyHack caught my attention...
+* How I designed Assignment 2
+  - Your responsibility to deal with errors
+  - Some flexibility
+  - Some open-endedness, force you to ask questions
+  - More than one acceptable way to solve the problem, deal with engineering tradeoffs
+  - Opportunities for the future
+* The point of lab 6...
 * Today: storing data over time
 * What can't we do, knowing the limitations of client-side JavaScript.
 * What we have learned so far in this course: key-value pairs
@@ -226,3 +223,45 @@
 * Local storage: ~5 MB per domain
 * The finer point: both cookies are local storage are still bound by Same Origin Policy
 * Examples
+
+# Tuesday, March 13th and Thursday, March 15th: Server-Side and Web Applications
+* What are the limitations of client-side?
+  1. Can't connect to a database server directly --and hence, store lots and lots of data
+  2. Other people cannot access data or information that you have (i.e., you can't make responses)
+  3. Can't to write to files on disk
+  4. You are constrained by web browser (i.e., browser incompatibility issues)
+  5. Storage constraints (e.g., cookies, local storage)
+  6. Security issues (e.g., same origin policy)
+  7. View source
+* The picture: client-server
+* How do you design the server-side environment, assuming that hardware (computer(s) for server(s)) is provided to you?
+  1. Handle incoming request
+  2. Be publicly known and available
+  3. Store data
+  4. Receive data
+  5. Send / make response back to client
+  6. Forward requests
+  7. Send requests _to other servers_
+  8. Protect data
+  9. Handle a lot of requests
+  10. Build HTML data on the fly
+  11. Be available all the time (well, almost)
+* Implementation 1 (ugly): Node.js => write server-side programs using JavaScript
+* Implementation 2 (cleaner using Express framework)
+  
+# Tuesday, March 28th: Server-Side (continued), Frameworks
+* Last class: the server side, Node.js, Express
+* Option A: https://github.com/tuftsdev/WebProgramming/blob/gh-pages/examples/nodejs/server.js
+* Option B: https://github.com/tuftsdev/WebProgramming/blob/gh-pages/examples/nodejs/simpleexpress/app.js
+* General form of a method in Express.js
+* The `express`, `request`, and `response` objects
+* The `package.json` and `Procfile`
+* A good framework:
+  1. Don't reinvent the wheel
+  2. Most of the important ideas are already built for you
+  3. Shorten code
+  4. Add-on modules that you need.  For all web applications developed using Express.js, a file `package.json` is required.  The file is a list of requirements / dependencies for the web application.  Think of this as the ingredients for a recipe.  Then install all the requirements / dependencies via `npm install`
+* Heroku and pushing your application to Heroku
+* Assignment 3
+* Making HTTP POST requests
+* A fine point: data sent to a web server is always text!

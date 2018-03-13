@@ -14,8 +14,9 @@
 	function reload() {
 		elem = document.getElementById("results");
 		output = "";
-		for (key in localStorage) {
-			output = output + "<p>" + localStorage[key] + "</p>\n";
+		// Source: https://stackoverflow.com/questions/3138564/looping-through-localstorage-in-html5-and-javascript
+		for (var i = 0; i < localStorage.length; i++) {
+			output = output + "<p>" + localStorage.getItem(localStorage.key(i)) + "</p>\n";
 		}
 		elem.innerHTML = output;
 	}

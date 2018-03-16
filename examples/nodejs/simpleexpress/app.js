@@ -2,6 +2,15 @@
 var express = require('express');
 var app = express();
 
+/* Format
+
+app.HTTP_VERB('ROUTE_NAME', function(request, response) {
+	// do something...
+	// Send response back via `response.send();`
+});
+
+*/
+
 app.get('/', function(request, response) {
 	response.send("Hello world");
 });

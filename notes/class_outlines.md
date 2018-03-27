@@ -249,7 +249,7 @@
 * Implementation 1 (ugly): Node.js => write server-side programs using JavaScript
 * Implementation 2 (cleaner using Express framework)
   
-# Tuesday, March 28th: Server-Side (continued), Frameworks
+# Tuesday, March 27th: Server-Side (continued), Frameworks
 * Last class: the server side, Node.js, Express
 * Option A: https://github.com/tuftsdev/WebProgramming/blob/gh-pages/examples/nodejs/server.js
 * Option B: https://github.com/tuftsdev/WebProgramming/blob/gh-pages/examples/nodejs/simpleexpress/app.js
@@ -265,3 +265,23 @@
 * Assignment 3
 * Making HTTP POST requests
 * A fine point: data sent to a web server is always text!
+
+# Thursday, March 29th: MongoDB: Data Persistence with MongoDB, Connecting Node.js with MongoDB
+* A simple and complex picture of client-server architecture: https://www.acunetix.com/websitesecurity/web-application-attack/
+* So far, we have talked about the middle tier using Node.js and Express.js (framework on top of Node.js)
+* Handling data via HTTP POST...
+* ...or HTTP GET
+* Enable Cross-Origin Resource Sharing (CORS)
+* Let's talk about storing data now, the database server layer
+* Yes, we are dealing with another server (for solely storing data)
+* Why aren't we using a relational database or SQL in this class? Complexity.  The big idea that you know already: key-value pairs
+* MongoDB: we can store lots and lots of key-value pairs a la JSON
+* Database: a bin of data
+* Collection: lots and lots of data records
+* Document: a single record of key-value pairs in JSON format
+* All documents contain a field `_id`, generated for you
+* Important: a document does not need to follow a certain structure
+* Operations: inserting a document, querying a collection, updating a document
+* Important: inserting a document into a database that does not exist WILL create the database!
+* Wait, I'm confused: we are dealing with two different systems here. How do you have a Node.js server talk to a MongoDB server? The answer: a driver. A driver is a piece of software for accessing a database.  Think of this as a translation engine.  There is a `mongodb` driver for Node.js
+* Example: https://github.com/tuftsdev/WebProgramming/tree/gh-pages/examples/nodejs/nodemongoapp.  Feel free to copy and use initialization code.  It will help you big time!

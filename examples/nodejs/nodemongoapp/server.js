@@ -9,8 +9,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // Required if we need to use HTTP post parameters
 
 // Mongo initialization and connect to database
-// process.env.MONGOLAB_URI is the environment variable on Heroku for the MongoLab add-on
-// process.env.MONGOHQ_URL is the environment variable on Heroku for the MongoHQ add-on
+// process.env.MONGODB_URI is the default environment variable on Heroku for the MongoLab add-on
+// process.env.MONGOLAB_URI is the old environment variable on Heroku for the MongoLab add-on
+// process.env.MONGOHQ_URL is an environment variable on Heroku for the MongoHQ add-on
 // If environment variables not found, fall back to mongodb://localhost/nodemongoexample
 // nodemongoexample is the name of the database
 var mongoUri = process.env.MONGODB_URI || process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/nodemongoexample';

@@ -263,15 +263,13 @@
   4. Add-on modules that you need.  For all web applications developed using Express.js, a file `package.json` is required.  The file is a list of requirements / dependencies for the web application.  Think of this as the ingredients for a recipe.  Then install all the requirements / dependencies via `npm install`
 * Heroku and pushing your application to Heroku
 * Assignment 3
-* Making HTTP POST requests
-* A fine point: data sent to a web server is always text!
 
 # Thursday, March 29th: MongoDB: Data Persistence with MongoDB, Connecting Node.js with MongoDB
+* Using data sent via HTTP POST...
+* ...or HTTP GET
+* A fine point: data sent to a web server is always text!
 * A simple and complex picture of client-server architecture: https://www.acunetix.com/websitesecurity/web-application-attack/
 * So far, we have talked about the middle tier using Node.js and Express.js (framework on top of Node.js)
-* Handling data via HTTP POST...
-* ...or HTTP GET
-* Enable Cross-Origin Resource Sharing (CORS)
 * Let's talk about storing data now, the database server layer
 * Yes, we are dealing with another server (for solely storing data)
 * Why aren't we using a relational database or SQL in this class? Complexity.  The big idea that you know already: key-value pairs

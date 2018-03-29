@@ -7,6 +7,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // Required if we need to use HTTP post parameters
 
 app.post("/echo", function(request, response) {
+	console.log("In the server...");
+	console.log(request.body);
 	var firstName = request.body.firstname;
 	var lastName = request.body.lastname;
 	response.send("Hello " + firstName + " " + lastName + "!");

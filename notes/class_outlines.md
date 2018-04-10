@@ -292,25 +292,25 @@
 * There's something wrong with it. What if...
 * Cross-Site Scripting (XSS): what is it, why is it so bad, and where to attack?
 * https://www.veracode.com/security/xss
-* Security 101: never trust user input from a client
+
+# Tuesday, April 10th and Thursday, April 12th: Web Security, Part 2 and Closing the Course
+* Last class: cross-site scripting (XSS) and web security 101
 * Awareness:
   1. OWASP Top 10 list: https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf
   2. CWE/SANS TOP 25 Most Dangerous Software Errors: https://www.sans.org/top25-software-errors/
 * Defending against XSS (don't do this in Assignment 3)
-* How bad is this problem? http://www.slideshare.net/elie-bursztein/lessons-learned-while-protecting-gmail
-* The moral of the story...
-
-# Tuesday, November 28th and Thursday, November 30th: Web Security, Part 2 and Closing the Course
-* Last class: cross-site scripting (XSS) and web security 101
-* Assignment 4
+* How bad is this problem? https://www.elie.net/static/files/lessons-learned-while-protecting-gmail/lessons-learned-while-protecting-gmail.pdf
 * Playground: http://www.cs.tufts.edu/comp/20/hackme.php
 * Bypassing client-side validation using a proxy
 * Case study: "How to buy a 65” Plasma for $.99" http://www.edgeblog.net/2006/how-to-buy-a-plasma-for-99/
 * Database injection attack in MongoDB
+* The moral of the story...
+* Assignment 4
 * Hard-coded credentials: https://cwe.mitre.org/data/definitions/259.html
 * What happened during spring break nearly two years ago:
 * "I’ve Just Liberated My Modules" https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c#.aandh88ud. Discussion on Hacker News: https://news.ycombinator.com/item?id=11340510
 * "NPM & left-pad: Have We Forgotten How To Program?" http://www.haneycodes.net/npm-left-pad-have-we-forgotten-how-to-program/. Discussion on Hacker News: https://news.ycombinator.com/item?id=11348798
+
 * Closing the course
 * No slides necessary for a lightning talk
 * Some reads on how to give a good lightning talk:

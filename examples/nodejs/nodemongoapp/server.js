@@ -26,7 +26,7 @@ app.use(express.static(__dirname + '/public'));
 app.post('/feedme', function(request, response) {
 	console.log(request.body);
 	var foodItem = request.body.food;
-	foodItem = foodItem.replace(/[^\w\s]/gi, ''); // remove all special characters.  Can you explain why this is important?
+	//foodItem = foodItem.replace(/[^\w\s]/gi, ''); // remove all special characters.  Can you explain why this is important?
 	var toInsert = {
 		"food": foodItem,
 	};

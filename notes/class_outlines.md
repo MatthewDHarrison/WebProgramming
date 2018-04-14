@@ -303,14 +303,14 @@
 * Playground: http://www.cs.tufts.edu/comp/20/hackme.php
 * Bypassing client-side validation using a proxy
 * Case study: "How to buy a 65” Plasma for $.99" http://www.edgeblog.net/2006/how-to-buy-a-plasma-for-99/
-* Database injection attack in MongoDB
 * The moral of the story...
 * Assignment 4
 * Hard-coded credentials: https://cwe.mitre.org/data/definitions/259.html
+
+* Database injection attack in MongoDB
 * What happened during spring break nearly two years ago:
 * "I’ve Just Liberated My Modules" https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c#.aandh88ud. Discussion on Hacker News: https://news.ycombinator.com/item?id=11340510
 * "NPM & left-pad: Have We Forgotten How To Program?" http://www.haneycodes.net/npm-left-pad-have-we-forgotten-how-to-program/. Discussion on Hacker News: https://news.ycombinator.com/item?id=11348798
-
 * Closing the course
 * No slides necessary for a lightning talk
 * Some reads on how to give a good lightning talk:
@@ -325,7 +325,8 @@
   - The Cyber Security Education problem
   - "our CEO Tony’s greatest dissatisfaction many engineering new grads, as is not just the lack of preparation, but the seeming disinterest to chase down that very understanding."
 * What's the point --of everything? https://github.com/alex/what-happens-when
-* Semester Group Project: For each semester group project team on Thursday, prepare a short technical lightning talk (3 - 5 minutes) to the class on something that your team has learned in the semester group project.  This could be anything: the Facebook API, MySQL, Angular, etc.  The points of a lighting talk:
+
+* Semester Group Project: For each semester group project team on Tuesday, prepare a short technical lightning talk (3 - 5 minutes) to the class on something that your team has learned in the semester group project.  This could be anything: the Facebook API, MySQL, Angular, etc.  The points of a lighting talk:
   1. To demonstrate growth and application of material
   2. To teach something new to the class.  We can't teach everything in this course.
   3. To share ideas
